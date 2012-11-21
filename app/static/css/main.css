@@ -1,0 +1,31 @@
+.results-view {
+     position:fixed;
+     top:60px;
+     bottom: 5px;
+     overflow-y: auto;
+     overflow-x: hidden;
+ }
+
+.detail-view {
+     position:fixed;
+     top:60px;
+     height: 300px;
+     overflow-y: auto;
+     overflow-x: hidden;
+}
+
+.inventory-view {
+     position:fixed;
+     top:370px;
+     bottom: 5px;
+     overflow-y: auto;
+     overflow-x: hidden;
+}
+
+.add-top-margin {
+	  margin-top: 60px;
+}
+
+.tag-display {
+	line-height: inherit;
+}
