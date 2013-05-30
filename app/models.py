@@ -1,4 +1,5 @@
 from django.db import models
+from itertools import chain
 
 class TagManager(models.Manager):
 	def get_by_natural_key(self, name):
@@ -50,8 +51,8 @@ class Food(models.Model):
 		return self.meal_types.all()
 
 	def get_tags(self):
-		return self.get_cuisines() + self.get_ingredients() \
-			+ self.get_meal_types() + self.get_tastes()
+		return list(chain(self.get_cuisines(), self.get_ingredients(), \
+			self.get_meal_types()))
 
 	def get_tastes(self):
 		return self.tastes.all()

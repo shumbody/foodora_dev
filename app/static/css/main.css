@@ -1,31 +1,126 @@
-.results-view {
-     position:fixed;
-     top:60px;
-     bottom: 5px;
-     overflow-y: auto;
-     overflow-x: hidden;
- }
-
-.detail-view {
-     position:fixed;
-     top:60px;
-     height: 300px;
-     overflow-y: auto;
-     overflow-x: hidden;
-}
-
-.inventory-view {
-     position:fixed;
-     top:370px;
-     bottom: 5px;
-     overflow-y: auto;
-     overflow-x: hidden;
-}
-
 .add-top-margin {
 	  margin-top: 60px;
 }
 
+body {
+     margin: 0;
+     background-color: #eee;
+     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+     overflow: hidden;
+     margin-top: 38px;
+}
+
+#btn-recommend{
+     margin-left: 5px;
+}
+
+.center {
+     margin: 0 auto;
+}
+
+.center-vert {
+     margin-top: 50%;
+}
+
+#detail-wrapper {
+     background-color: #f7f7f7;
+     border-bottom: 1px solid #ddd;
+     display: none;
+     padding: 10px;
+}
+
+#detail-container{
+     margin-top: 15px;
+}
+
+.hidden {
+     display:none;
+}
+
+.likes-toggle a {
+     text-align: center;
+     cursor: pointer;
+}
+
+#navbar a {
+     cursor: pointer;
+}
+
+.result {
+     background-color: #fff;
+     border: 1px solid #ddd;
+     cursor: pointer;
+     margin: 10px;
+     float: left;
+     width: 230px;
+}
+
+.result-img-container {
+     margin: 0 auto;
+     width: 230px;
+}
+
+.result-img {
+     width: inherit;
+}
+
+.result-title{
+     font-size: 12px;
+     margin: 0 auto;
+     margin-top: 15px;
+     margin-bottom: 15px;
+     text-align: center;
+     width: 200px;
+}
+
+.result-title span{
+     font-weight: bold;
+     color: rgba(0,0,0,0.6);
+     text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+}
+
+#results-wrapper {
+     bottom: 0px;
+     overflow: auto;
+     top: 80px;
+}
+
+#search-results-container{
+     margin: 0 auto;    
+     margin-top: 15px;
+}
+
 .tag-display {
 	line-height: inherit;
+}
+
+.textbox {
+     font-size: 18px;
+     line-height: 2.5em;
+}
+
+.thumbnail, .thumbnail img {
+     background-color: #fff;
+     max-height: 200px;
+     max-width: 350px;
+}
+
+.transparent {
+     zoom: 1;
+     filter: alpha(opacity=80);
+     opacity: 0.8;
+}
+
+.txt-center {
+     text-align:center;
+}
+
+.txt-embedded {
+     color: #ccc;
+     text-shadow: 0px 1px 1px #ffffff;
+}
+
+
+.txt-letterpress {
+     text-shadow: 0px 1px 1px #ffffff;
 }

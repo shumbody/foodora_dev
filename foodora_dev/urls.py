@@ -16,4 +16,7 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
     url(r'^search/', 'app.views.search', name='search'),
+    url(r'^recommend/', 'app.views.recommend', name='recommend'),
+    url(r'^random/', 'app.views.get_random', name='random'),
 )
+
